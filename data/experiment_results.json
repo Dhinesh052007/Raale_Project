@@ -1,0 +1,323 @@
+{
+  "timestamp": "2026-10-03T13:46:20.116075+00:00",
+  "random_seed": 42,
+  "total_injected_incidents": 100,
+  "total_normal_controls": 50,
+  "failure_distribution": {
+    "WAN_DEGRADATION": 30,
+    "WIFI_DEGRADATION": 30,
+    "APPLICATION_DEGRADATION": 25,
+    "MULTIPLE_DEGRADATION": 15
+  },
+  "metrics": {
+    "experience_recorder": {
+      "detected_incidents": 100,
+      "missed_incidents": 0,
+      "detection_rate_pct": 100.0,
+      "miss_rate_pct": 0.0,
+      "correctly_localised": 61,
+      "incorrectly_localised": 39,
+      "localisation_accuracy_pct": 61.0,
+      "false_positives": 0,
+      "false_positive_rate_pct": 0.0
+    },
+    "baseline_monitor": {
+      "detected_incidents": 45,
+      "missed_incidents": 55,
+      "detection_rate_pct": 45.0,
+      "miss_rate_pct": 55.0,
+      "correctly_localised": 30,
+      "localisation_accuracy_pct": 66.67,
+      "false_positives": 0,
+      "false_positive_rate_pct": 0.0
+    }
+  },
+  "event_integrity": {
+    "total_events": 18098,
+    "valid_events": 17848,
+    "duplicate_events": 50,
+    "delayed_events": 50,
+    "out_of_order_events": 200,
+    "rejected_events": 0,
+    "recovered_events": 0,
+    "buffered_events": 0
+  },
+  "error_analysis_summary": {
+    "total_errors": 39,
+    "error_categories": {
+      "Very short incident / Weak signal": 0,
+      "Conflicting signals / Overlapping symptoms": 0,
+      "Threshold boundary": 39,
+      "Insufficient evidence": 0
+    },
+    "error_details": [
+      {
+        "case_id": 1,
+        "branch_id": "B014",
+        "duration_seconds": 180,
+        "failure_type": "WIFI_DEGRADATION",
+        "expected_cause": "Wi-Fi degradation",
+        "predicted_cause": "Multiple contributing signals",
+        "error_category": "Threshold boundary",
+        "explanation": "Misclassified Wi-Fi degradation as Multiple contributing signals"
+      },
+      {
+        "case_id": 2,
+        "branch_id": "B042",
+        "duration_seconds": 120,
+        "failure_type": "WIFI_DEGRADATION",
+        "expected_cause": "Wi-Fi degradation",
+        "predicted_cause": "Multiple contributing signals",
+        "error_category": "Threshold boundary",
+        "explanation": "Misclassified Wi-Fi degradation as Multiple contributing signals"
+      },
+      {
+        "case_id": 5,
+        "branch_id": "B038",
+        "duration_seconds": 120,
+        "failure_type": "APPLICATION_DEGRADATION",
+        "expected_cause": "Application degradation",
+        "predicted_cause": "Multiple contributing signals",
+        "error_category": "Threshold boundary",
+        "explanation": "Misclassified Application degradation as Multiple contributing signals"
+      },
+      {
+        "case_id": 7,
+        "branch_id": "B008",
+        "duration_seconds": 60,
+        "failure_type": "WAN_DEGRADATION",
+        "expected_cause": "WAN degradation",
+        "predicted_cause": "Multiple contributing signals",
+        "error_category": "Threshold boundary",
+        "explanation": "Misclassified WAN degradation as Multiple contributing signals"
+      },
+      {
+        "case_id": 8,
+        "branch_id": "B028",
+        "duration_seconds": 180,
+        "failure_type": "APPLICATION_DEGRADATION",
+        "expected_cause": "Application degradation",
+        "predicted_cause": "Wi-Fi degradation",
+        "error_category": "Threshold boundary",
+        "explanation": "Misclassified Application degradation as Wi-Fi degradation"
+      },
+      {
+        "case_id": 9,
+        "branch_id": "B030",
+        "duration_seconds": 180,
+        "failure_type": "WAN_DEGRADATION",
+        "expected_cause": "WAN degradation",
+        "predicted_cause": "Multiple contributing signals",
+        "error_category": "Threshold boundary",
+        "explanation": "Misclassified WAN degradation as Multiple contributing signals"
+      },
+      {
+        "case_id": 10,
+        "branch_id": "B001",
+        "duration_seconds": 240,
+        "failure_type": "APPLICATION_DEGRADATION",
+        "expected_cause": "Application degradation",
+        "predicted_cause": "WAN degradation",
+        "error_category": "Threshold boundary",
+        "explanation": "Misclassified Application degradation as WAN degradation"
+      },
+      {
+        "case_id": 15,
+        "branch_id": "B041",
+        "duration_seconds": 180,
+        "failure_type": "APPLICATION_DEGRADATION",
+        "expected_cause": "Application degradation",
+        "predicted_cause": "WAN degradation",
+        "error_category": "Threshold boundary",
+        "explanation": "Misclassified Application degradation as WAN degradation"
+      },
+      {
+        "case_id": 16,
+        "branch_id": "B049",
+        "duration_seconds": 60,
+        "failure_type": "WIFI_DEGRADATION",
+        "expected_cause": "Wi-Fi degradation",
+        "predicted_cause": "Multiple contributing signals",
+        "error_category": "Threshold boundary",
+        "explanation": "Misclassified Wi-Fi degradation as Multiple contributing signals"
+      },
+      {
+        "case_id": 21,
+        "branch_id": "B049",
+        "duration_seconds": 180,
+        "failure_type": "WIFI_DEGRADATION",
+        "expected_cause": "Wi-Fi degradation",
+        "predicted_cause": "Multiple contributing signals",
+        "error_category": "Threshold boundary",
+        "explanation": "Misclassified Wi-Fi degradation as Multiple contributing signals"
+      }
+    ]
+  },
+  "scenario_samples": [
+    {
+      "case_id": 1,
+      "branch_id": "B014",
+      "failure_type": "WIFI_DEGRADATION",
+      "duration_seconds": 180,
+      "baseline_detected": false,
+      "recorder_detected": true,
+      "recorder_localised": "Multiple contributing signals",
+      "recorder_correct": false,
+      "error_reason": "Misclassified Wi-Fi degradation as Multiple contributing signals"
+    },
+    {
+      "case_id": 2,
+      "branch_id": "B042",
+      "failure_type": "WIFI_DEGRADATION",
+      "duration_seconds": 120,
+      "baseline_detected": false,
+      "recorder_detected": true,
+      "recorder_localised": "Multiple contributing signals",
+      "recorder_correct": false,
+      "error_reason": "Misclassified Wi-Fi degradation as Multiple contributing signals"
+    },
+    {
+      "case_id": 3,
+      "branch_id": "B030",
+      "failure_type": "MULTIPLE_DEGRADATION",
+      "duration_seconds": 60,
+      "baseline_detected": true,
+      "recorder_detected": true,
+      "recorder_localised": "Multiple contributing signals",
+      "recorder_correct": true,
+      "error_reason": null
+    },
+    {
+      "case_id": 4,
+      "branch_id": "B036",
+      "failure_type": "WAN_DEGRADATION",
+      "duration_seconds": 180,
+      "baseline_detected": true,
+      "recorder_detected": true,
+      "recorder_localised": "WAN degradation",
+      "recorder_correct": true,
+      "error_reason": null
+    },
+    {
+      "case_id": 5,
+      "branch_id": "B038",
+      "failure_type": "APPLICATION_DEGRADATION",
+      "duration_seconds": 120,
+      "baseline_detected": false,
+      "recorder_detected": true,
+      "recorder_localised": "Multiple contributing signals",
+      "recorder_correct": false,
+      "error_reason": "Misclassified Application degradation as Multiple contributing signals"
+    },
+    {
+      "case_id": 6,
+      "branch_id": "B009",
+      "failure_type": "WIFI_DEGRADATION",
+      "duration_seconds": 180,
+      "baseline_detected": false,
+      "recorder_detected": true,
+      "recorder_localised": "Wi-Fi degradation",
+      "recorder_correct": true,
+      "error_reason": null
+    },
+    {
+      "case_id": 7,
+      "branch_id": "B008",
+      "failure_type": "WAN_DEGRADATION",
+      "duration_seconds": 60,
+      "baseline_detected": true,
+      "recorder_detected": true,
+      "recorder_localised": "Multiple contributing signals",
+      "recorder_correct": false,
+      "error_reason": "Misclassified WAN degradation as Multiple contributing signals"
+    },
+    {
+      "case_id": 8,
+      "branch_id": "B028",
+      "failure_type": "APPLICATION_DEGRADATION",
+      "duration_seconds": 180,
+      "baseline_detected": false,
+      "recorder_detected": true,
+      "recorder_localised": "Wi-Fi degradation",
+      "recorder_correct": false,
+      "error_reason": "Misclassified Application degradation as Wi-Fi degradation"
+    },
+    {
+      "case_id": 9,
+      "branch_id": "B030",
+      "failure_type": "WAN_DEGRADATION",
+      "duration_seconds": 180,
+      "baseline_detected": true,
+      "recorder_detected": true,
+      "recorder_localised": "Multiple contributing signals",
+      "recorder_correct": false,
+      "error_reason": "Misclassified WAN degradation as Multiple contributing signals"
+    },
+    {
+      "case_id": 10,
+      "branch_id": "B001",
+      "failure_type": "APPLICATION_DEGRADATION",
+      "duration_seconds": 240,
+      "baseline_detected": false,
+      "recorder_detected": true,
+      "recorder_localised": "WAN degradation",
+      "recorder_correct": false,
+      "error_reason": "Misclassified Application degradation as WAN degradation"
+    },
+    {
+      "case_id": 11,
+      "branch_id": "B035",
+      "failure_type": "APPLICATION_DEGRADATION",
+      "duration_seconds": 90,
+      "baseline_detected": false,
+      "recorder_detected": true,
+      "recorder_localised": "Application degradation",
+      "recorder_correct": true,
+      "error_reason": null
+    },
+    {
+      "case_id": 12,
+      "branch_id": "B019",
+      "failure_type": "WAN_DEGRADATION",
+      "duration_seconds": 120,
+      "baseline_detected": true,
+      "recorder_detected": true,
+      "recorder_localised": "WAN degradation",
+      "recorder_correct": true,
+      "error_reason": null
+    },
+    {
+      "case_id": 13,
+      "branch_id": "B047",
+      "failure_type": "WIFI_DEGRADATION",
+      "duration_seconds": 90,
+      "baseline_detected": false,
+      "recorder_detected": true,
+      "recorder_localised": "Wi-Fi degradation",
+      "recorder_correct": true,
+      "error_reason": null
+    },
+    {
+      "case_id": 14,
+      "branch_id": "B033",
+      "failure_type": "WIFI_DEGRADATION",
+      "duration_seconds": 40,
+      "baseline_detected": false,
+      "recorder_detected": true,
+      "recorder_localised": "Wi-Fi degradation",
+      "recorder_correct": true,
+      "error_reason": null
+    },
+    {
+      "case_id": 15,
+      "branch_id": "B041",
+      "failure_type": "APPLICATION_DEGRADATION",
+      "duration_seconds": 180,
+      "baseline_detected": false,
+      "recorder_detected": true,
+      "recorder_localised": "WAN degradation",
+      "recorder_correct": false,
+      "error_reason": "Misclassified Application degradation as WAN degradation"
+    }
+  ]
+}
